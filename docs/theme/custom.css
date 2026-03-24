@@ -20,25 +20,22 @@ code, pre, .hljs {
 }
 
 .sidebar-scrollbox::before {
-    content: "lumindd";
+    content: "lumindd" "\A" "v1.0.0";
+    white-space: pre;
     display: block;
     font-family: var(--mono-font);
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--sidebar-fg);
-    padding: 1.25rem 1rem 0.1rem 1rem;
+    padding: 1.5rem 1rem 1.25rem 1rem;
     letter-spacing: -0.02em;
-}
-
-.sidebar-scrollbox::after {
-    content: "v1.0.0";
-    display: block;
-    font-family: var(--mono-font);
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: #4a90d9;
-    padding: 0 1rem 1rem 1rem;
-    letter-spacing: 0.02em;
+    line-height: 1.8;
+    border-bottom: 1px solid var(--sidebar-spacer);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--sidebar-fg) 60%, #4a90d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .sidebar .chapter li a {
