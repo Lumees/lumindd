@@ -3,7 +3,7 @@ authors = ["Hasan Kurşun"]
 language = "en"
 multilingual = false
 src = "src"
-title = "lumindd Documentation"
+title = "lumindd v1.0.0"
 description = "Complete guide to the lumindd decision diagram library"
 
 [output.html]

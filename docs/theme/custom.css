@@ -25,9 +25,23 @@ code, pre, .hljs {
     transition: background 0.15s;
 }
 
-.sidebar .chapter li a:hover,
-.sidebar .chapter li a.active {
+.sidebar .chapter li a:hover {
     background: var(--sidebar-active);
+    color: var(--sidebar-fg);
+}
+
+.sidebar .chapter li a.active {
+    background: #4a90d9;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* ── Menu bar title ─────────────────────────────────────── */
+.menu-bar .menu-title {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    font-family: var(--mono-font);
 }
 
 /* ── Content area ───────────────────────────────────────── */
@@ -116,11 +130,6 @@ blockquote {
     border-bottom: 1px solid var(--quote-border);
 }
 
-.menu-bar .menu-title {
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: -0.01em;
-}
 
 /* ── Load Inter font from Google Fonts ──────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
