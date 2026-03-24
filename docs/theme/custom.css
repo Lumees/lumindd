@@ -30,10 +30,18 @@ code, pre, .hljs {
     color: var(--sidebar-fg);
 }
 
-.sidebar .chapter li a.active {
-    background: #4a90d9;
+.sidebar .chapter li a.active,
+.sidebar .chapter li a.active:hover,
+.sidebar .chapter li > a.active,
+nav.sidebar .chapter li a.active {
+    background: #4a90d9 !important;
     color: #ffffff !important;
-    font-weight: 600;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.sidebar .chapter li a.active * {
+    color: #ffffff !important;
 }
 
 /* ── Menu bar title ─────────────────────────────────────── */
