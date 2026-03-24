@@ -19,6 +19,28 @@ code, pre, .hljs {
     border-right: 1px solid var(--sidebar-spacer);
 }
 
+.sidebar-scrollbox::before {
+    content: "lumindd";
+    display: block;
+    font-family: var(--mono-font);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--sidebar-fg);
+    padding: 1.25rem 1rem 0.1rem 1rem;
+    letter-spacing: -0.02em;
+}
+
+.sidebar-scrollbox::after {
+    content: "v1.0.0";
+    display: block;
+    font-family: var(--mono-font);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #4a90d9;
+    padding: 0 1rem 1rem 1rem;
+    letter-spacing: 0.02em;
+}
+
 .sidebar .chapter li a {
     border-radius: 6px;
     padding: 3px 8px;
