@@ -1,0 +1,17 @@
+[package]
+name = "lumindd"
+version = "1.0.0"
+edition = "2021"
+authors = ["Hasan Kurşun <hk@lumees.io>"]
+license = "BSD-3-Clause"
+description = "A pure Rust decision diagram library — BDD, ADD, and ZDD manipulation with complemented edges, dynamic reordering, and operation caching"
+repository = "https://github.com/Lumees/lumindd"
+homepage = "https://lumeeslab.com"
+keywords = ["bdd", "decision-diagram", "add", "zdd", "formal-verification"]
+categories = ["algorithms", "data-structures", "science"]
+rust-version = "1.70"
+
+[dependencies]
+bitflags = "2"
+
+[dev-dependencies]
