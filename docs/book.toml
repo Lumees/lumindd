@@ -7,6 +7,9 @@ title = "lumindd Documentation"
 description = "Complete guide to the lumindd decision diagram library"
 
 [output.html]
-default-theme = "rust"
+default-theme = "ayu"
 preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/Lumees/lumindd"
+additional-css = ["theme/custom.css"]
+mathjax-support = false
+no-section-label = false

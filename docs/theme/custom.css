@@ -1,0 +1,126 @@
+/* ── Typography ─────────────────────────────────────────── */
+:root {
+    --mono-font: "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+code, pre, .hljs {
+    font-family: var(--mono-font);
+    font-size: 0.875rem;
+}
+
+/* ── Sidebar ────────────────────────────────────────────── */
+.sidebar {
+    border-right: 1px solid var(--sidebar-spacer);
+}
+
+.sidebar .chapter li a {
+    border-radius: 6px;
+    padding: 3px 8px;
+    transition: background 0.15s;
+}
+
+.sidebar .chapter li a:hover,
+.sidebar .chapter li a.active {
+    background: var(--sidebar-active);
+}
+
+/* ── Content area ───────────────────────────────────────── */
+.content main {
+    max-width: 860px;
+}
+
+/* ── Headings ───────────────────────────────────────────── */
+.content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--quote-border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    border-bottom: 1px solid var(--quote-border);
+    padding-bottom: 0.25rem;
+}
+
+.content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.8rem;
+}
+
+/* ── Code blocks ────────────────────────────────────────── */
+pre {
+    border-radius: 8px;
+    border: 1px solid var(--quote-border);
+    padding: 1.1rem 1.25rem;
+}
+
+code:not(pre code) {
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+    background: var(--quote-border);
+    font-size: 0.85em;
+}
+
+/* ── Tables ─────────────────────────────────────────────── */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background: var(--quote-border);
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+table td {
+    padding: 0.55rem 1rem;
+    border-bottom: 1px solid var(--quote-border);
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ── Blockquotes (tip/note style) ───────────────────────── */
+blockquote {
+    border-left: 4px solid #4a90d9;
+    background: var(--quote-border);
+    border-radius: 0 6px 6px 0;
+    padding: 0.75rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+/* ── Nav buttons ────────────────────────────────────────── */
+.nav-chapters {
+    font-size: 0.9rem;
+}
+
+/* ── Menu bar ───────────────────────────────────────────── */
+.menu-bar {
+    border-bottom: 1px solid var(--quote-border);
+}
+
+.menu-bar .menu-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+}
+
+/* ── Load Inter font from Google Fonts ──────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
