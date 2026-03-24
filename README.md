@@ -5,6 +5,7 @@ A pure Rust decision diagram library for manipulating **BDD**, **ADD**, and **ZD
 Built by [Lumees Lab](https://lumeeslab.com) ([GitHub](https://github.com/Lumees)).
 
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
+[![Documentation](https://img.shields.io/badge/docs-lumees.github.io%2Flumindd-blue)](https://lumees.github.io/lumindd)
 
 ## Overview
 
